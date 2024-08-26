@@ -2,9 +2,9 @@ import wpilib
 import wpimath
 import wpimath.geometry
 
-from phoenix5.sensors import WPI_Pigeon2
+# from phoenix5.sensors import WPI_Pigeon2
 
-from subsystems import SwerveModule
+# from subsystems import SwerveModule
 
 class SwerveDrive:
     '''

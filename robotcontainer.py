@@ -15,10 +15,10 @@ class RobotContainer:
 
         if not wpilib.RobotBase.isSimulation() or self.ignoreSim:
             swerveModules = [
-                SwerveModule(),
-                SwerveModule(),
-                SwerveModule(),
-                SwerveModule(),
+                SwerveModule(0,1),
+                SwerveModule(2,3),
+                SwerveModule(4,5),
+                SwerveModule(6,7),
             ]
             gyro = ...
         else:
