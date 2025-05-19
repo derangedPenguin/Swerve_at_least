@@ -20,10 +20,10 @@ class RobotContainer:
 
         if not wpilib.RobotBase.isSimulation() or self.ignoreSim:
             swerveModules = [
-                SwerveModule( "FL", 0, 1, 9, 0.0 ),
-                SwerveModule( "FR", 2, 3, 9, 0.0 ),
-                SwerveModule( "BL", 4, 5, 9, 0.0 ),
-                SwerveModule( "BR", 6, 7, 9, 0.0 ),
+                SwerveModule("FL", 7, 8, 18, 97.471 ),
+                SwerveModule("FR", 1, 2, 12, 5.361 ),
+                SwerveModule("BL", 5, 6, 16, 298.828 ),
+                SwerveModule("BR", 3, 4, 14, 60.557 )
             ]
             gyro = phoenix5.sensors.WPI_Pigeon2( 9 , 'rio')
         else:
@@ -48,3 +48,4 @@ class RobotContainer:
         )
 
         #put everything on SmartDashboard
+        wpilib.SmartDashboard.putData('ServeDrive', self.swerve)

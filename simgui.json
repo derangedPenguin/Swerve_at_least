@@ -1,22 +1,40 @@
 {
-  "HALProvider": {
-    "Other Devices": {
-      "SPARK MAX [2]": {
-        "header": {
-          "open": true
-        }
-      }
-    }
-  },
   "NTProvider": {
     "types": {
-      "/FMSInfo": "FMSInfo"
+      "/FMSInfo": "FMSInfo",
+      "/SmartDashboard/ServeDrive": "Subsystem"
     }
   },
   "NetworkTables": {
+    "Persistent Values": {
+      "open": false
+    },
+    "Retained Values": {
+      "open": false
+    },
+    "Transitory Values": {
+      "open": false
+    },
+    "retained": {
+      "Swerve": {
+        "modules": {
+          "open": true
+        },
+        "open": true
+      }
+    },
     "transitory": {
       "Swerve": {
         "modules": {
+          "BR": {
+            "open": true
+          },
+          "FL": {
+            "open": true
+          },
+          "FR": {
+            "open": true
+          },
           "open": true
         },
         "open": true
